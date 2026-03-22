@@ -23,7 +23,8 @@
             "extensions": [
                 "golang.go",
                 "ms-azuretools.vscode-containers",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "formulahendry.code-runner"
             ]
         }
     },
