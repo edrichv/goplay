@@ -1,0 +1,31 @@
+{
+    "name": "goplay",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        "--platform", "linux/amd64"
+    ],
+    "mounts": [
+        {
+            "source": "gopath",
+            "target": "/go",
+            "type": "volume"
+        },
+        {
+            "source": "home",
+            "target": "/root",
+            "type": "volume"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-azuretools.vscode-containers",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
